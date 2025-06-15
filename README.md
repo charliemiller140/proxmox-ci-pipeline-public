@@ -1,4 +1,4 @@
-# GitHub Actions CI/CD Pipeline for Proxmox VM Automation
+## GitHub Actions CI/CD Pipeline for Proxmox VM Automation
 
 [![CI/CD](https://github.com/charliemiller140/proxmox-ci-pipeline-public/actions/workflows/deploy.yml/badge.svg)](https://github.com/charliemiller140/proxmox-pipeline-lab/actions)
 
@@ -108,7 +108,7 @@ name = "lab-vm-${formatdate("YYYYMMDDhhmmss", timestamp())}"
 
 ### ⚙️ What Is a Runner (and Why You Need One for Proxmox)?
 
-GitHub Actions executes workflows on **runners** — these are the machines that perform your CI/CD tasks.
+GitHub Actions executes workflows on **runners** these are the machines that perform your CI/CD tasks.
 
 By default, workflows run on GitHub-hosted runners like `ubuntu-latest`. But those runners **can’t access a private homelab Proxmox server** because:
 
