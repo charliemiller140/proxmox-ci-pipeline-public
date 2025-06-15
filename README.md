@@ -1,6 +1,6 @@
 # GitHub Actions CI/CD Pipeline for Proxmox VM Automation
 
-[![CI/CD](https://github.com/charliemiller140/proxmox-pipeline-lab/actions/workflows/deploy.yml/badge.svg)](https://github.com/charliemiller140/proxmox-pipeline-lab/actions)
+[![CI/CD](https://github.com/charliemiller140/proxmox-ci-pipeline-public/actions/workflows/deploy.yml/badge.svg)](https://github.com/charliemiller140/proxmox-pipeline-lab/actions)
 
 This repository automates the full lifecycle of provisioning and configuring Ubuntu virtual machines in a **Proxmox VE** environment. The stack combines **Terraform**, **Ansible**, and **Cloud-Init**, with orchestration handled by **GitHub Actions** via a self-hosted runner.
 
