@@ -2,9 +2,11 @@
 
 [![CI/CD](https://github.com/charliemiller140/proxmox-ci-pipeline-public/actions/workflows/deploy.yml/badge.svg)](https://github.com/charliemiller140/proxmox-pipeline-lab/actions)
 
-This repository automates the full lifecycle of provisioning and configuring Ubuntu virtual machines in a **Proxmox VE** environment. The stack combines **Terraform**, **Ansible**, and **Cloud-Init**, with orchestration handled by **GitHub Actions** via a self-hosted runner.
+## 🚀 Proxmox VM Automation with CI/CD
 
-Originally built to automate a personal homelab, this project demonstrates CI/CD-driven infrastructure-as-code (IaC) patterns for real-world virtualisation and DevOps scenarios. It’s a reproducible template suitable for lab environments or small-scale production.
+This project lets you **automatically provision and configure Ubuntu virtual machines** on your **Proxmox VE** host — using **Terraform**, **Cloud-Init**, and **Ansible**, fully driven by **GitHub Actions**.
+
+This repository gives you a **real-world CI/CD pipeline** for Infrastructure as Code inside a private network — with **push-to-deploy VM provisioning**, SSH key injection, static IP configuration, and automated software setup.
 
 ---
 
