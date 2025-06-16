@@ -208,5 +208,3 @@ done
 This project was developed to improve infrastructure automation, CI/CD workflows, and GitHub Actions experience in a real-world homelab environment. Contributions, suggestions, or questions are welcome!
 
 You can explore more projects at: [github.com/charliemiller140](https://github.com/charliemiller140)
-
-```
