@@ -200,6 +200,7 @@ done
 * [ ] Parametrize Proxmox node name, bridge, VLAN tag.
 * [ ] Add teardown (destroy) pipeline trigger.
 * [ ] Add health check or monitoring agent (e.g. Node Exporter).
+* [ ] Create webpage for pushing code and monitoring etc.
 
 ---
 
