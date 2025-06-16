@@ -108,7 +108,7 @@ name = "lab-vm-${formatdate("YYYYMMDDhhmmss", timestamp())}"
 
 ---
 
-### ⚙What Is a Runner (and Why You Need One for Proxmox)?
+### What Is a Runner (and Why You Need One for Proxmox)?
 
 GitHub Actions executes workflows on **runners** these are the machines that perform your CI/CD tasks.
 
