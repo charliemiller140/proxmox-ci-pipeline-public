@@ -190,6 +190,7 @@ done
 * ❗ **SSH connection fails**: Confirm public key used in Terraform matches private key in Ansible secret.
 * ❗ **Ping fails on VLANs**: Your switch must trunk the correct VLANs to Proxmox.
 * ❗ **No IP?**: Ensure there's a DHCP server or assign a static IP.
+* ❗ **Making sure my configuration syntax for Proxmox API was correct**: Read the documentation correctly.
 
 ---
 
