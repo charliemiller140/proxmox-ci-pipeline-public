@@ -12,7 +12,7 @@ This repository gives you a **real-world CI/CD pipeline** for Infrastructure as 
 
 ## 🔍 Project Overview
 
-![Image Jun 15, 2025, 09_24_46 PM](https://github.com/user-attachments/assets/36f5aad3-9a61-4cc5-884b-f18850ffcb01)
+![Image](![Network Widget Screenshot](./images/455287217-36f5aad3-9a61-4cc5-884b-f18850ffcb01.png)
 
 - **Terraform** provisions VMs on Proxmox by cloning a prepared cloud-init template.
 - **Cloud-Init** injects SSH keys and optional static IP configurations.
