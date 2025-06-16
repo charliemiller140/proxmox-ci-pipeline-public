@@ -6,7 +6,7 @@
 
 This project lets you **automatically provision and configure Ubuntu virtual machines** on your **Proxmox VE** host using **Terraform**, **Cloud-Init**, and **Ansible**, fully driven by **GitHub Actions**.
 
-This repository gives you a **real-world CI/CD pipeline** for Infrastructure as Code inside a private network — with **push-to-deploy VM provisioning**, SSH key injection, static IP configuration, and automated software setup.
+This repository gives you a **real-world CI/CD pipeline** for Infrastructure as Code inside a private network with **push-to-deploy VM provisioning**, SSH key injection, static IP configuration, and automated software setup.
 
 ---
 
