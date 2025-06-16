@@ -188,7 +188,7 @@ done
 
 * ❗ **Cloud-init not working**: Ensure the Proxmox template has the cloud-init drive (`ide2`).
 * ❗ **SSH connection fails**: Confirm public key used in Terraform matches private key in Ansible secret.
-* ❗ **Ping fails on VLANs**: Your switch must trunk the correct VLANs to Proxmox.
+* ❗ **Ping fails on VLANs**: Your switch must trunk the correct VLANs to Proxmox and/or tag the vm with the correct VLAN.
 * ❗ **No IP?**: Ensure there's a DHCP server or assign a static IP.
 * ❗ **Making sure my configuration syntax for Proxmox API was correct**: Read the documentation correctly.
 
