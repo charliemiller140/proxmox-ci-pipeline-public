@@ -2,7 +2,7 @@
 
 [![CI/CD](https://github.com/charliemiller140/proxmox-ci-pipeline-public/actions/workflows/deploy.yml/badge.svg)](https://github.com/charliemiller140/proxmox-pipeline-lab/actions)
 
-## 🚀 Proxmox VM Automation with CI/CD
+## Proxmox VM Automation with CI/CD
 
 This project lets you **automatically provision and configure Ubuntu virtual machines** on your **Proxmox VE** host using **Terraform**, **Cloud-Init**, and **Ansible**, fully driven by **GitHub Actions**.
 
@@ -10,7 +10,7 @@ This repository gives you a **real-world CI/CD pipeline** for Infrastructure as 
 
 ---
 
-## 🔍 Project Overview
+## Project Overview
 
 (![Network Widget Screenshot](./images/455287217-36f5aad3-9a61-4cc5-884b-f18850ffcb01.png)
 
@@ -22,7 +22,7 @@ This repository gives you a **real-world CI/CD pipeline** for Infrastructure as 
 
 ---
 
-## 🧰 Stack Used
+## Stack Used
 
 | Tool             | Role                                     |
 |------------------|------------------------------------------|
@@ -34,7 +34,7 @@ This repository gives you a **real-world CI/CD pipeline** for Infrastructure as 
 
 ---
 
-## 🗂️ Directory Structure
+## Directory Structure
 
 ```text
 .
@@ -55,9 +55,9 @@ This repository gives you a **real-world CI/CD pipeline** for Infrastructure as 
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
-### 1. 🔐 Proxmox Setup
+### 1. Proxmox Setup
 
 Create a Proxmox API token with appropriate permissions, then add the following as **GitHub Secrets**:
 
@@ -70,7 +70,7 @@ Create a Proxmox API token with appropriate permissions, then add the following 
 
 ---
 
-### 2. 🔑 SSH Keys for Ansible
+### 2. SSH Keys for Ansible
 
 Generate a keypair to allow Ansible to log in:
 
@@ -86,7 +86,7 @@ ssh-keygen -t rsa -b 4096 -f ~/.ssh/ansible_ci_key
 
 ---
 
-### 3. 🌐 Network Requirements
+### 3. Network Requirements
 
 Ensure:
 
@@ -96,9 +96,9 @@ Ensure:
 
 ---
 
-## 💡 Key Highlights & Tips
+## Key Highlights & Tips
 
-### ✅ Dynamic VM Naming
+### Dynamic VM Naming
 
 Terraform appends a timestamp to avoid naming collisions:
 
@@ -108,7 +108,7 @@ name = "lab-vm-${formatdate("YYYYMMDDhhmmss", timestamp())}"
 
 ---
 
-### ⚙️ What Is a Runner (and Why You Need One for Proxmox)?
+### ⚙What Is a Runner (and Why You Need One for Proxmox)?
 
 GitHub Actions executes workflows on **runners** these are the machines that perform your CI/CD tasks.
 
@@ -117,7 +117,7 @@ By default, workflows run on GitHub-hosted runners like `ubuntu-latest`. But tho
 * They’re in the cloud (no access to your LAN)
 * Proxmox is on your **internal/private network** behind NAT
 
-#### ✅ Solution: Self-Hosted Runner
+#### Solution: Self-Hosted Runner
 
 To connect GitHub Actions with Proxmox securely, this project uses a **self-hosted runner** a lightweight GitHub agent you install on a machine **inside your network** (e.g. your Proxmox server, a VM, or a Raspberry Pi).
 
@@ -149,7 +149,7 @@ This allows the GitHub workflow to:
 
 ---
 
-#### 🧠 Why This Matters
+#### Why This Matters
 
 Without a self-hosted runner:
 
@@ -161,7 +161,7 @@ Using a **self-hosted runner bridges GitHub and your local environment securely*
 
 ---
 
-### ✅ Static IP or DHCP via Cloud-Init
+### Static IP or DHCP via Cloud-Init
 
 ```hcl
 ipconfig0 = "ip=X.X.X.X/X,gw=X.X.X.X"
@@ -171,7 +171,7 @@ ipconfig0 = "ip=dhcp"
 
 ---
 
-### ✅ Wait for SSH Before Ansible
+### Wait for SSH Before Ansible
 
 Optional improvement: wait for SSH to become available:
 
@@ -184,7 +184,7 @@ done
 
 ---
 
-### ⚠️ Common Pitfalls
+### Common Pitfalls I experienced 
 
 * ❗ **Cloud-init not working**: Ensure the Proxmox template has the cloud-init drive (`ide2`).
 * ❗ **SSH connection fails**: Confirm public key used in Terraform matches private key in Ansible secret.
@@ -193,7 +193,7 @@ done
 
 ---
 
-## 🛣️ Roadmap / Next Steps
+## Improvements
 
 * [ ] Support multi-VM creation via Terraform `count`.
 * [ ] Parametrize Proxmox node name, bridge, VLAN tag.
@@ -202,7 +202,7 @@ done
 
 ---
 
-## 🙋 About
+## About
 
 This project was developed to improve infrastructure automation, CI/CD workflows, and GitHub Actions experience in a real-world homelab environment. Contributions, suggestions, or questions are welcome!
 
